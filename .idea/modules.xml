@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/Enemy Arcane.iml" filepath="$PROJECT_DIR$/.idea/Enemy Arcane.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/Proiect-PS.iml" filepath="$PROJECT_DIR$/.idea/Proiect-PS.iml" />
+>>>>>>> Duta
     </modules>
   </component>
 </project>
