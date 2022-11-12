@@ -50,15 +50,15 @@ def generate_song(noteCantec):
     signalComplet=[]
     for (nota, durata) in noteCantec:
         t=np.linspace(0,fullNote*1/durata,int(fullNote*1/durata*rate))
-        signalCantec = [amp*x(note[nota],t)]
-        np.concatenate(signalCantec)
+        signalCantec = amp*x(note[nota],t)
+    ##np.concatenate(signalCantec)
     print(signalCantec)
     return signalCantec
 
 def play_song(song):
     wav_wave = np.array(song, dtype=np.int16)
     print(wav_wave)
-    sounddevice.play(wav_wave)
+    sounddevice.play(wav_wave,blocking=True)
     sounddevice.stop()
 
 noteCantec = [
